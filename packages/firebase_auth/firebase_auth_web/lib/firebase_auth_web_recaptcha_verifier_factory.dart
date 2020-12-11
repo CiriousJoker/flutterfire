@@ -32,12 +32,12 @@ class RecaptchaVerifierFactoryWeb extends RecaptchaVerifierFactoryPlatform {
       : _delegate = firebase.RecaptchaVerifier(container, parameters),
         super();
 
-  @override
-  RecaptchaVerifierFactoryPlatform delegateFor(
-      {String container, Map<String, dynamic> parameters}) {
-    return RecaptchaVerifierFactoryWeb(
-        container: container, parameters: parameters);
-  }
+  // @override
+  // RecaptchaVerifierFactoryPlatform delegateFor(
+  //     {String container, Map<String, dynamic> parameters}) {
+  //   return RecaptchaVerifierFactoryWeb(
+  //       container: container, parameters: parameters);
+  // }
 
   @override
   T getDelegate<T>() {

@@ -27,10 +27,10 @@ class RecaptchaVerifier {
   ///  provisions a reCAPTCHA for each project and will configure this upon
   ///  rendering. For an invisible reCAPTCHA, a size key must have the value
   ///  'invisible'.
-  factory RecaptchaVerifier(
-          {String container, Map<String, dynamic> parameters}) =>
-      RecaptchaVerifier._(
-          _factory.delegateFor(container: container, parameters: parameters));
+  // factory RecaptchaVerifier(
+  //         {String container, Map<String, dynamic> parameters}) =>
+  //     RecaptchaVerifier._(
+  //         _factory.delegateFor(container: container, parameters: parameters));
 
   /// Returns the underlying factory delegate instance.
   @protected
